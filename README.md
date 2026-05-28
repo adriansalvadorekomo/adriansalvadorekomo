@@ -24,7 +24,7 @@
 
 ### 📄 CV
 
-[Download my CV](https://github.com/adriansalvadorekomo/adriansalvadorekomo/raw/main/Adrian_Salvador_Ekomo_CV.pdf)
+[Download my CV](https://raw.githubusercontent.com/adriansalvadorekomo/adriansalvadorekomo/main/Adrian_Salvador_Ekomo_CV.pdf)
 
 ---
 

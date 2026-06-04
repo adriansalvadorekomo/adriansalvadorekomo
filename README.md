@@ -95,6 +95,7 @@ I connect sources with **Apache Airflow** so nothing gets lost, transform data w
 |---------|-------|-------------|
 | [**Smart-ERP-DataOps**](https://github.com/adriansalvadorekomo/smart-erp-dataopts) | `FastAPI` `dbt` `Airflow` `PostgreSQL` `React` `MLflow` `RAG` | Full DataOps-driven ERP for e-commerce — 10-phase build from business model to AI-powered chat assistant. In progress. |
 | [**EventZilla BI**](https://github.com/adriansalvadorekomo/Esprit-PABI-4ERPBI6-2526-EventZella) | `FastAPI` `Talend` `Airflow` `PostgreSQL` `MLflow` `Docker` | Star-schema warehouse with 10 ML models, AI chatbot, full observability, and 11-microservice deployment. |
+| [**KORIA — GabèsEye**](https://github.com/adriansalvadorekomo/KORIA) | `Flutter` `PyTorch` `scikit-learn` `Airbyte` `FastAPI` | AI-powered environmental monitoring — satellite segmentation, sensor data sync, time-series forecasting, multilingual chatbot. H12 INNOVATION 3.0. |
 | [**HR Workforce Analytics**](#) | `Snowflake-schema` `Power BI` `ETL` | Dimensional warehouse consolidating HR data from multiple systems with self-service Power BI dashboards. |
 
 </details>

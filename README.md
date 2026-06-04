@@ -1,7 +1,7 @@
 
 <pre>
 ╔══════════════════════════════════════════════════════════════════════╗
-║  Data Pipeline — Ingest ⇢ Store ⇢ Transform ⇢ Model ⇢ Serve ⇢ Monitor  ║
+║  Data Pipeline — Ingest ⇢ Store ⇢ Transform ⇢ Model ⇢ Serve ⇢ Monitor║
 ╚══════════════════════════════════════════════════════════════════════╝
 </pre>
 

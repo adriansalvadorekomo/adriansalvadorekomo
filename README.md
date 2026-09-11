@@ -31,7 +31,7 @@ SELECT
   'raw data > trusted decisions' AS mantra;
 ```
 
-Through academic and personal projects, I've gained hands-on experience designing data pipelines, data warehouses, analytics solutions, and machine learning workflows — connecting sources with **Apache Airflow**, transforming with **dbt**, and serving dashboards (**Power BI**, **Metabase**) with **MLflow**-tracked models. I also have professional experience in **DevOps** (OpenStack, Terraform, Ansible), giving me a practical understanding of infrastructure, automation, and deploying systems reliably. My focus is the journey from raw data to structured, trustworthy information for real business decisions, and I'm developing enterprise data knowledge through **SAP BW** and BI.
+Through academic and personal projects, I've gained hands-on experience designing data pipelines, data warehouses, analytics solutions, and machine learning workflows — what hooked me is systems thinking: how data moves through a system and where it actually breaks. My solo DataOps build runs an e-commerce dataset through a **Databricks** lakehouse (Bronze/Silver/Gold medallion, data quality gates, Terraform-managed infra with PR-gated CI) from a **PostgreSQL** source. I also have professional **DevOps** experience (OpenStack, Terraform, Ansible — Open edX deployment, HA Bastion with ~5s failover), giving me a practical understanding of infrastructure and automation. My focus is the journey from raw data to structured, trustworthy information for real business decisions.
 
 ---
 
@@ -55,7 +55,7 @@ Through academic and personal projects, I've gained hands-on experience designin
   </tr>
   <tr>
     <td><b>🗄 Store</b></td>
-    <td><img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white" /> <img src="https://img.shields.io/badge/SQL-CC2927?style=flat&logo=sqlite&logoColor=white" /> <img src="https://img.shields.io/badge/SAP_BW-learning-0FAAFF?style=flat" /></td>
+    <td><img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white" /> <img src="https://img.shields.io/badge/SQL-CC2927?style=flat&logo=sqlite&logoColor=white" /> <img src="https://img.shields.io/badge/Databricks-FF3621?style=flat&logo=databricks&logoColor=white" /> <img src="https://img.shields.io/badge/Delta_Lake-00ADD8?style=flat&logo=delta&logoColor=white" /> <img src="https://img.shields.io/badge/SAP_BW-learning-0FAAFF?style=flat" /></td>
   </tr>
   <tr>
     <td><b>🔁 Transform</b></td>
@@ -79,7 +79,7 @@ Through academic and personal projects, I've gained hands-on experience designin
   </tr>
   <tr>
     <td><b>💻 Languages</b></td>
-    <td><img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" /> <img src="https://img.shields.io/badge/R-276DC3?style=flat&logo=r&logoColor=white" /> <img src="https://img.shields.io/badge/Java-ED8B00?style=flat&logo=java&logoColor=white" /> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black" /> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white" /> <img src="https://img.shields.io/badge/C-A8B9CC?style=flat&logo=c&logoColor=black" /></td>
+    <td><img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" /> <img src="https://img.shields.io/badge/Java-ED8B00?style=flat&logo=java&logoColor=white" /></td>
   </tr>
 </table>
 
@@ -93,10 +93,10 @@ Through academic and personal projects, I've gained hands-on experience designin
 
 | Project | Stack | Description |
 |---------|-------|-------------|
-| [**Smart-ERP-DataOps**](https://github.com/adriansalvadorekomo/smart-erp-dataopts) | `FastAPI` `dbt` `Airflow` `PostgreSQL` `React` `MLflow` `RAG` | Full DataOps-driven ERP for e-commerce — 10-phase build from business model to AI-powered chat assistant. In progress. |
-| [**EventZilla BI**](https://github.com/adriansalvadorekomo/Esprit-PABI-4ERPBI6-2526-EventZella) | `FastAPI` `Talend` `Airflow` `PostgreSQL` `MLflow` `Docker` | Star-schema warehouse with 10 ML models, AI chatbot, full observability, and 11-microservice deployment. |
+| [**Smart-ERP-DataOps**](https://github.com/adriansalvadorekomo/smart-erp-dataopts) | `PostgreSQL` `Databricks` `Delta Lake` `Terraform` `CI` | Solo DataOps build for e-commerce — PostgreSQL source, Databricks medallion lakehouse (Bronze/Silver/Gold) with DQ gates, Terraform-managed infra, PR-gated CI. |
+| [**EventZilla BI**](https://github.com/adriansalvadorekomo/Esprit-PABI-4ERPBI6-2526-EventZella) | `Talend` `Airflow` `PostgreSQL` `MLflow` `Docker` | Academic team project (6 people); my scope: integration, Docker/Nginx delivery, chatbot/API fixes. Star-schema warehouse, ML forecasting/anomaly detection, NL-to-SQL, 11 microservices. |
 | [**KORIA — GabèsEye**](https://github.com/adriansalvadorekomo/KORIA) | `Flutter` `PyTorch` `scikit-learn` `Airbyte` `FastAPI` | AI-powered environmental monitoring — satellite segmentation, sensor data sync, time-series forecasting, multilingual chatbot. H12 INNOVATION 3.0. |
-| [**Stage RIF — OpenStack HA Automatisation**](https://github.com/adriansalvadorekomo/Stage_ete_RIF_Automatisation) | `OpenStack` `Terraform` `Ansible` `Nginx` `Keepalived` | HA Bastion with single Floating IP + auto failover, Terraform private VMs, Ansible Nginx reverse-proxy with DuckDNS + Let's Encrypt HTTPS. |
+| [**Stage RIF — OpenStack HA Automatisation**](https://github.com/adriansalvadorekomo/Stage_ete_RIF_Automatisation) | `OpenStack` `Terraform` `Ansible` `Nginx` `Keepalived` | DevOps intern: Terraform provisioning + Ansible config of Open edX on OpenStack; HA Bastion with single Floating IP, validated PRIMARY→BACKUP failover in ~5s; secure SSH + Git pipeline. |
 
 </details>
 
@@ -117,9 +117,10 @@ Through academic and personal projects, I've gained hands-on experience designin
 
 | Certificate | Details |
 |-------------|---------|
-| [<img src="certs/PDA0019443332398.png" width="230" />](certs/PDA0019443332398.pdf) | **Python Data Associate — DataCamp**<br/>Issued Sept 2026 · ID `PDA0019443332398`<br/>Data analysis with Python: managing, cleaning, visualizing data · Pandas<br/>Exams: PY101 (timed) + PY501P (practical business problem) |
 | [<img src="certs/DEA0018198901240.png" width="230" />](certs/DEA0018198901240.pdf) | **Data Engineer Associate — DataCamp**<br/>Issued Sept 2026 · ID `DEA0018198901240`<br/>Data cleaning · ETL · SQL · normalization · cloud pipelines · data quality<br/>Exams: DE101 (timed) + DE501P (practical SQL: extraction, joins, aggregation, validation) |
+| [<img src="certs/databricks-get-started-data-engineering.png" width="230" />](certs/databricks-get-started-data-engineering.pdf) | **Get Started with Databricks for Data Engineering — Databricks Academy**<br/>Issued Sept 2026<br/>Databricks lakehouse fundamentals for data engineering<br/>Click the certificate to view the credential |
 | [<img src="certs/SQA0019633928960.png" width="230" />](certs/SQA0019633928960.pdf) | **SQL Associate — DataCamp**<br/>Issued Sept 2026 · ID `SQA0019633928960`<br/>Click the certificate to view the credential |
+| [<img src="certs/PDA0019443332398.png" width="230" />](certs/PDA0019443332398.pdf) | **Python Data Associate — DataCamp**<br/>Issued Sept 2026 · ID `PDA0019443332398`<br/>Data analysis with Python: managing, cleaning, visualizing data · Pandas<br/>Exams: PY101 (timed) + PY501P (practical business problem) |
 | [<img src="certs/prompt-engineering-cognitive-class.png" width="230" />](certs/prompt-engineering-cognitive-class.pdf) | **Prompt Engineering for Everyone — Cognitive Class (IBM Skills Network)**<br/>Issued July 2026 · `AI0117EN`<br/>Prompt design and LLM interaction fundamentals<br/>[Verify credential](https://courses.cognitiveclass.ai/certificates/f447a067ccea4a395d461e2c2f5b3c6cc) |
 
 ---

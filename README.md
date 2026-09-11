@@ -1,9 +1,7 @@
 
-<pre>
-╔══════════════════════════════════════════════════════════════════════╗
-║  Data Pipeline — Ingest ⇢ Store ⇢ Transform ⇢ Model ⇢ Serve ⇢ Monitor║
-╚══════════════════════════════════════════════════════════════════════╝
-</pre>
+<p align="center">
+  <sub>INGEST&ensp;⇢&ensp;STORE&ensp;⇢&ensp;TRANSFORM&ensp;⇢&ensp;MODEL&ensp;⇢&ensp;SERVE&ensp;⇢&ensp;MONITOR</sub>
+</p>
 
 <h1 align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=1A73E8&center=true&vCenter=true&width=850&lines=Adrian+Salvador+Ekomo;Data+Engineering+Student;DevOps+%E2%86%92+DataOps+%7C+Databricks+%C2%B7+Terraform+%C2%B7+PySpark+%C2%B7+SQL" alt="Typing SVG" />

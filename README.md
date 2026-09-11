@@ -6,11 +6,11 @@
 </pre>
 
 <h1 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=24&pause=1000&color=1A73E8&center=true&vCenter=true&width=700&lines=Adrian+Salvador+Ekomo;Computer+Engineering+Student;Junior+Data+Engineer+%7C+Cloud+%26+DevOps" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=1A73E8&center=true&vCenter=true&width=850&lines=Adrian+Salvador+Ekomo;Data+Engineering+Student;DevOps+%E2%86%92+DataOps+%7C+Databricks+%C2%B7+Terraform+%C2%B7+PySpark+%C2%B7+SQL" alt="Typing SVG" />
 </h1>
 
 <p align="center">
-  <b>Computer Engineering Student @ Esprit | Junior Data Engineer · Cloud & DevOps</b> — Building reliable data platforms and turning data into useful insights. Currently looking for a Junior Data Engineer opportunity.
+  <b>Data Engineering Student @ Esprit | DevOps → DataOps</b> — Building reliable data platforms and turning data into useful insights. Currently looking for a Junior Data Engineer opportunity.
 </p>
 
 <p align="center">
@@ -139,7 +139,7 @@ Through academic and personal projects, I've gained hands-on experience designin
 ---
 
 <p align="center">
-  <i>Computer Engineering Student | Junior Data Engineer | Cloud & DevOps</i>
+  <i>Data Engineering Student | DevOps → DataOps | Databricks · Terraform · PySpark · SQL</i>
   <br />
   <sub>Built with ✦ for the data that drives decisions</sub>
 </p>

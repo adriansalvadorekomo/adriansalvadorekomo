@@ -51,37 +51,39 @@ Through academic and personal projects, I've gained hands-on experience designin
   </tr>
   <tr>
     <td><b>⬇ Ingest</b></td>
-    <td><img src="https://img.shields.io/badge/Talend-FF6F00?style=flat&logo=talend&logoColor=white" /> <img src="https://img.shields.io/badge/Airbyte-615EFF?style=flat&logo=airbyte&logoColor=white" /> <img src="https://img.shields.io/badge/Apache%20Airflow-017CEE?style=flat&logo=apacheairflow&logoColor=white" /></td>
+    <td><img src="https://img.shields.io/badge/Databricks-FF3621?style=flat&logo=databricks&logoColor=white" /> <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white" /> <img src="https://img.shields.io/badge/Talend-FF6F00?style=flat&logo=talend&logoColor=white" /> <img src="https://img.shields.io/badge/Apache%20Airflow-017CEE?style=flat&logo=apacheairflow&logoColor=white" /> <img src="https://img.shields.io/badge/Airbyte-615EFF?style=flat&logo=airbyte&logoColor=white" /></td>
   </tr>
   <tr>
     <td><b>🗄 Store</b></td>
-    <td><img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white" /> <img src="https://img.shields.io/badge/SQL-CC2927?style=flat&logo=sqlite&logoColor=white" /> <img src="https://img.shields.io/badge/Databricks-FF3621?style=flat&logo=databricks&logoColor=white" /> <img src="https://img.shields.io/badge/Delta_Lake-00ADD8?style=flat&logo=delta&logoColor=white" /> <img src="https://img.shields.io/badge/SAP_BW-learning-0FAAFF?style=flat" /></td>
+    <td><img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white" /> <img src="https://img.shields.io/badge/Databricks-FF3621?style=flat&logo=databricks&logoColor=white" /> <img src="https://img.shields.io/badge/Delta_Lake-00ADD8?style=flat&logo=delta&logoColor=white" /> <img src="https://img.shields.io/badge/Unity_Catalog-FF3621?style=flat&logo=databricks&logoColor=white" /> <img src="https://img.shields.io/badge/SAP_BW-learning-0FAAFF?style=flat" /></td>
   </tr>
   <tr>
     <td><b>🔁 Transform</b></td>
-    <td><img src="https://img.shields.io/badge/dbt-FF694B?style=flat&logo=dbt&logoColor=white" /> <img src="https://img.shields.io/badge/Talend-FF6F00?style=flat&logo=talend&logoColor=white" /></td>
+    <td><img src="https://img.shields.io/badge/Databricks-FF3621?style=flat&logo=databricks&logoColor=white" /> <img src="https://img.shields.io/badge/PySpark-E25A1C?style=flat&logo=apachespark&logoColor=white" /> <img src="https://img.shields.io/badge/Talend-FF6F00?style=flat&logo=talend&logoColor=white" /> <img src="https://img.shields.io/badge/dbt-FF694B?style=flat&logo=dbt&logoColor=white" /></td>
   </tr>
   <tr>
     <td><b>🧠 Model</b></td>
-    <td><img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" /> <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikitlearn&logoColor=white" /> <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white" /> <img src="https://img.shields.io/badge/MLflow-0194E2?style=flat&logo=mlflow&logoColor=white" /> <img src="https://img.shields.io/badge/Prophet-7B16FF?style=flat&logo=meta&logoColor=white" /></td>
+    <td><img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" /> <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikitlearn&logoColor=white" /> <img src="https://img.shields.io/badge/XGBoost-EB8028?style=flat" /> <img src="https://img.shields.io/badge/statsmodels-1352A0?style=flat" /> <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white" /> <img src="https://img.shields.io/badge/MLflow-0194E2?style=flat&logo=mlflow&logoColor=white" /></td>
   </tr>
   <tr>
     <td><b>📊 Serve</b></td>
-    <td><img src="https://img.shields.io/badge/Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=black" /> <img src="https://img.shields.io/badge/Metabase-509EE3?style=flat&logo=metabase&logoColor=white" /> <img src="https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white" /> <img src="https://img.shields.io/badge/REST-25ABE2?style=flat&logo=fastapi&logoColor=white" /></td>
+    <td><img src="https://img.shields.io/badge/Databricks_SQL-FF3621?style=flat&logo=databricks&logoColor=white" /> <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=black" /> <img src="https://img.shields.io/badge/Metabase-509EE3?style=flat&logo=metabase&logoColor=white" /> <img src="https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white" /> <img src="https://img.shields.io/badge/REST-25ABE2?style=flat&logo=fastapi&logoColor=white" /></td>
   </tr>
   <tr>
     <td><b>📈 Monitor</b></td>
-    <td><img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat&logo=prometheus&logoColor=white" /> <img src="https://img.shields.io/badge/Grafana-F46800?style=flat&logo=grafana&logoColor=white" /> <img src="https://img.shields.io/badge/n8n-EA4C89?style=flat&logo=n8n&logoColor=white" /></td>
+    <td><img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat&logo=prometheus&logoColor=white" /> <img src="https://img.shields.io/badge/Grafana-F46800?style=flat&logo=grafana&logoColor=white" /></td>
   </tr>
   <tr>
     <td><b>⚙ Deploy</b></td>
-    <td><img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white" /> <img src="https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black" /> <img src="https://img.shields.io/badge/Terraform-7B42BC?style=flat&logo=terraform&logoColor=white" /> <img src="https://img.shields.io/badge/Ansible-EE0000?style=flat&logo=ansible&logoColor=white" /> <img src="https://img.shields.io/badge/OpenStack-ED1944?style=flat&logo=openstack&logoColor=white" /> <img src="https://img.shields.io/badge/Nginx-009639?style=flat&logo=nginx&logoColor=white" /></td>
+    <td><img src="https://img.shields.io/badge/Terraform-7B42BC?style=flat&logo=terraform&logoColor=white" /> <img src="https://img.shields.io/badge/OpenStack-ED1944?style=flat&logo=openstack&logoColor=white" /> <img src="https://img.shields.io/badge/Ansible-EE0000?style=flat&logo=ansible&logoColor=white" /> <img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white" /> <img src="https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black" /> <img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white" /> <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white" /> <img src="https://img.shields.io/badge/Nginx-009639?style=flat&logo=nginx&logoColor=white" /> <img src="https://img.shields.io/badge/n8n-EA4C89?style=flat&logo=n8n&logoColor=white" /></td>
   </tr>
   <tr>
     <td><b>💻 Languages</b></td>
     <td><img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" /> <img src="https://img.shields.io/badge/Java-ED8B00?style=flat&logo=java&logoColor=white" /> <img src="https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnubash&logoColor=white" /></td>
   </tr>
 </table>
+
+<sub>Core drivers: <b>SQL</b> · <b>Databricks</b> · <b>Terraform</b> — project exposure (familiar): Airflow, Airbyte, dbt — methods: Systems Thinking, Agile</sub>
 
 ---
 

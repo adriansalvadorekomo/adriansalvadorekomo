@@ -79,7 +79,7 @@ Through academic and personal projects, I've gained hands-on experience designin
   </tr>
   <tr>
     <td><b>💻 Languages</b></td>
-    <td><img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" /> <img src="https://img.shields.io/badge/Java-ED8B00?style=flat&logo=java&logoColor=white" /></td>
+    <td><img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" /> <img src="https://img.shields.io/badge/Java-ED8B00?style=flat&logo=java&logoColor=white" /> <img src="https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnubash&logoColor=white" /></td>
   </tr>
 </table>
 

@@ -61,11 +61,11 @@ Through academic and personal projects, I've gained hands-on experience designin
   </tr>
   <tr>
     <td><b>🧠 Model</b></td>
-    <td><img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" /> <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikitlearn&logoColor=white" /> <img src="https://img.shields.io/badge/XGBoost-EB8028?style=flat" /> <img src="https://img.shields.io/badge/statsmodels-1352A0?style=flat" /> <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white" /> <img src="https://img.shields.io/badge/MLflow-0194E2?style=flat&logo=mlflow&logoColor=white" /></td>
+    <td><img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" /> <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikitlearn&logoColor=white" /> <img src="https://img.shields.io/badge/Prophet-9D7AEA?style=flat" /> <img src="https://img.shields.io/badge/statsmodels-1352A0?style=flat" /> <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white" /> <img src="https://img.shields.io/badge/MLflow-0194E2?style=flat&logo=mlflow&logoColor=white" /></td>
   </tr>
   <tr>
     <td><b>📊 Serve</b></td>
-    <td><img src="https://img.shields.io/badge/Databricks_SQL-FF3621?style=flat&logo=databricks&logoColor=white" /> <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=black" /> <img src="https://img.shields.io/badge/Metabase-509EE3?style=flat&logo=metabase&logoColor=white" /> <img src="https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white" /> <img src="https://img.shields.io/badge/REST-25ABE2?style=flat&logo=fastapi&logoColor=white" /></td>
+    <td><img src="https://img.shields.io/badge/Databricks_SQL-FF3621?style=flat&logo=databricks&logoColor=white" /> <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=black" /> <img src="https://img.shields.io/badge/SAP_BW-learning-0FAAFF?style=flat" /></td>
   </tr>
   <tr>
     <td><b>📈 Monitor</b></td>
@@ -77,11 +77,11 @@ Through academic and personal projects, I've gained hands-on experience designin
   </tr>
   <tr>
     <td><b>💻 Languages</b></td>
-    <td><img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" /> <img src="https://img.shields.io/badge/Java-ED8B00?style=flat&logo=java&logoColor=white" /> <img src="https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnubash&logoColor=white" /></td>
+    <td><img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" /> <img src="https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnubash&logoColor=white" /></td>
   </tr>
 </table>
 
-<sub>Core drivers: <b>SQL</b> · <b>Databricks</b> · <b>Terraform</b> — project exposure (familiar): Airflow, Airbyte, dbt — methods: Systems Thinking, Agile</sub>
+<sub>Core drivers: <b>SQL</b> · <b>Databricks</b> · <b>Terraform</b> — familiar: dbt — methods: Systems Thinking, Agile</sub>
 
 ---
 

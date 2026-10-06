@@ -4,7 +4,7 @@
 </p>
 
 <h1 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=1A73E8&center=true&vCenter=true&width=850&lines=Adrian+Salvador+Ekomo;Data+Engineering+Student;DevOps+%E2%86%92+DataOps+%7C+Databricks+%C2%B7+Terraform+%C2%B7+PySpark+%C2%B7+SQL" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=1A73E8&center=true&vCenter=true&width=850&lines=Adrian+Salvador+Ekomo;Data+Engineering+Student;DevOps+%E2%86%92+MLOps+%7C+Databricks+%C2%B7+Terraform+%C2%B7+PySpark+%C2%B7+SQL" alt="Typing SVG" />
 </h1>
 
 <p align="center">

@@ -8,7 +8,7 @@
 </h1>
 
 <p align="center">
-  <b>Data Engineering Student @ Esprit | DevOps → DataOps</b> — Building reliable data platforms and turning data into useful insights. Currently looking for a Junior Data Engineer opportunity.
+  <b>Data Engineering Student @ Esprit | DevOps → MLOps</b> — Building reliable data platforms and turning data into useful insights. Currently looking for a Junior Data Engineer opportunity.
 </p>
 
 <p align="center">

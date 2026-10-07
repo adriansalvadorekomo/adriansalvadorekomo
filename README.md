@@ -40,11 +40,11 @@ I eliminate manual, error-prone steps where infrastructure, CI/CD and data inter
 
 ---
 
-### Technical Skills — same 6 groups as my CV
+### Technical Skills
 
 <table>
   <tr>
-    <th align="left" width="220">Group (CV)</th>
+    <th align="left" width="220">Group</th>
     <th align="left">Stack</th>
   </tr>
   <tr>

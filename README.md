@@ -21,7 +21,7 @@
 ---
 
 ```sql
--- ABOUT ME — mirrors my English CV
+-- ABOUT ME
 SELECT
   'Engineering student (ESPRIT + Marburg)' AS profile,
   'Data Platform | Data Eng | DevOps'      AS seeking,
@@ -29,7 +29,7 @@ SELECT
   'Reproducible infra over manual steps'   AS mantra;
 ```
 
-I eliminate manual, error-prone steps where infrastructure, CI/CD and data intersect: reproducible infrastructure with Terraform + Ansible, quality-gated CI/CD with Jenkins + SonarQube, and governed data pipelines with Databricks + Spark and Airflow / Prefect. Proof below — each build reconciles, fails fast, or recovers fast.
+I eliminate manual, error-prone steps where infrastructure, CI/CD and data intersect: reproducible infrastructure with Terraform + Ansible, quality-gated delivery with Jenkins + SonarQube, and governed data pipelines with Databricks + Spark and Airflow / Prefect. Proof below — systems that reconcile, fail fast, and recover fast.
 
 ---
 
@@ -77,11 +77,9 @@ I eliminate manual, error-prone steps where infrastructure, CI/CD and data inter
 
 ---
 
-### Featured Builds — 5 CV projects only (pin these)
+### Featured Builds
 
-> Pin order on my profile matches this table. Unpinned everything else (KORIA, forks, school exercises).
-
-| Project | Stack (CV terms) | What it proves |
+| Project | Stack | What it proves |
 |---------|------------------|----------------|
 | [**DataOps Lakehouse for E-commerce Analytics**](https://github.com/adriansalvadorekomo/DataOps-Lakehouse-for-E-commerce-Analytics) | `PostgreSQL` `Databricks` `PySpark` `Terraform` `PR-gated CI` | Solo medallion lakehouse Bronze → Silver → DQ gate → Gold, Terraform-managed, end-to-end green, reconciling **99.4M** synthetic revenue. |
 | [**EventZilla — BI + AI Event Analytics**](https://github.com/adriansalvadorekomo/EventZilla-BI-AI-Powered-Event-Analytics-Platform) | `Airflow` `MLflow` `n8n` `Docker` `Nginx` `Prometheus` `Grafana` | 6-person team: star-schema warehouse from 3 sources, Prophet forecasting (**MAPE <15%**), 11 Dockerized microservices, Airflow + n8n automation. |
@@ -104,7 +102,7 @@ I eliminate manual, error-prone steps where infrastructure, CI/CD and data inter
 
 ---
 
-### Certifications — only the 4 on my CV
+### Certifications
 
 | Certificate | Details |
 |-------------|---------|
@@ -115,7 +113,7 @@ I eliminate manual, error-prone steps where infrastructure, CI/CD and data inter
 
 ---
 
-### Languages — matches CV
+### Languages
 
 <p>
   <img src="https://img.shields.io/badge/Spanish-Native-1A73E8?style=flat" />
@@ -126,7 +124,7 @@ I eliminate manual, error-prone steps where infrastructure, CI/CD and data inter
 
 ---
 
-### CV — EN / ES / FR synced from vault (DE coming soon)
+### CV
 
 <p>
   <a href="cv/Adrian_Salvador_Ekomo_CV_EN.pdf"><img src="https://img.shields.io/badge/🇬🇧-English-1A73E8?style=for-the-badge" /></a>
@@ -134,7 +132,7 @@ I eliminate manual, error-prone steps where infrastructure, CI/CD and data inter
   <a href="cv/Adrian_Salvador_Ekomo_CV_FR.pdf"><img src="https://img.shields.io/badge/🇫🇷-Français-0A66C2?style=for-the-badge" /></a>
   <img src="https://img.shields.io/badge/🇩🇪-Deutsch_soon-lightgrey?style=for-the-badge" />
 </p>
-<sub>EN/ES/FR are the current vault versions (Leipzig, Dec 2026). German lands later — badge stays disabled until then.</sub>
+<sub>German version coming soon.</sub>
 
 ---
 

@@ -110,6 +110,8 @@ I eliminate manual, error-prone steps where infrastructure, CI/CD and data inter
 | [<img src="certs/databricks-get-started-data-engineering.png" width="230" />](certs/databricks-get-started-data-engineering.pdf) | **Get Started with Databricks for Data Engineering — Databricks Academy**<br/>Issued Sept 2026<br/>Lakehouse fundamentals |
 | [<img src="certs/SQA0019633928960.png" width="230" />](certs/SQA0019633928960.pdf) | **SQL Associate — DataCamp**<br/>Issued Sept 2026 · ID `SQA0019633928960` |
 | [<img src="certs/PDA0019443332398.png" width="230" />](certs/PDA0019443332398.pdf) | **Python Data Associate — DataCamp**<br/>Issued Sept 2026 · ID `PDA0019443332398`<br/>Pandas · cleaning · visualization<br/>PY101 + PY501P |
+| [<img src="certs/HCDA.png" width="230" />](certs/HCDA.pdf) | **Hedera Certified Developer Associate (HCDA) — The Hashgraph Association**<br/>Issued Oct 2026<br/>Building on Hedera: smart contracts, SDKs and testnet |
+| [<img src="certs/HBF.png" width="230" />](certs/HBF.pdf) | **Hedera Business Foundation (HBF) — The Hashgraph Association**<br/>Issued Oct 2026<br/>Hedera network fundamentals: hashgraph, services and use cases |
 
 ---
 

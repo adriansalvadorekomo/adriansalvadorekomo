@@ -1,50 +1,14 @@
-<p align="center">
-  <sub>REPRODUCIBLE INFRA&ensp;⇢&ensp;QUALITY-GATED CI/CD&ensp;⇢&ensp;GOVERNED DATA PIPELINES</sub>
-</p>
+# Adrián Salvador Ekomo Mesi Obono
 
-<h1 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=1A73E8&center=true&vCenter=true&width=850&lines=Adri%C3%A1n+Salvador+Ekomo+Mesi+Obono;Engineering+student+building+data+platforms;Reproducible+Infra+%C2%B7+Gated+CI%2FCD+%C2%B7+Governed+Pipelines" alt="Typing SVG" />
-</h1>
+Data & Platform Engineering student (DevOps, DataOps, MLOps) in Leipzig, Germany. Open to internships from December 2026.
 
-<p align="center">
-  <b>I build the platforms data runs on.</b><br/>
-  <sub>Engineering student: reproducible infrastructure as code, quality-gated CI/CD and governed data pipelines.</sub><br/>
-  <sub>Seeking a <b>Data Platform / Data Engineering / DevOps internship</b> · Leipzig, Germany · Available from December 2026</sub>
-</p>
+[Portfolio](https://adriansalvadorekomodev.vercel.app) · [Notes](https://adriansalvadorekomodev.vercel.app/blog) · [LinkedIn](https://linkedin.com/in/adriansalvadorekomo) · [Email](mailto:adriansalvadorekomo@outlook.com) · CV: [EN](cv/Adrian_Salvador_Ekomo_CV_EN.pdf) · [ES](cv/Adrian_Salvador_Ekomo_CV_ES.pdf) · [FR](cv/Adrian_Salvador_Ekomo_CV_FR.pdf)
 
-<p align="center">
-  <a href="https://linkedin.com/in/adriansalvadorekomo"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-  <a href="mailto:adriansalvadorekomo@outlook.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-  <a href="https://github.com/adriansalvadorekomo"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
-  <a href="https://adriansalvadorekomodev.vercel.app"><img src="https://img.shields.io/badge/Portfolio-1A73E8?style=for-the-badge&logo=vercel&logoColor=white" /></a>
-  <a href="https://adriansalvadorekomodev.vercel.app/blog"><img src="https://img.shields.io/badge/Notes-7C5CFF?style=for-the-badge&logo=readthedocs&logoColor=white" /></a>
-</p>
+I build the platforms data runs on: reproducible infrastructure as code, quality-gated CI/CD and governed data pipelines. I look for the manual, error-prone step where infrastructure, delivery and data meet, and replace it with something that can be reviewed, tested and repeated.
 
----
+## Selected projects
 
-```sql
--- ABOUT ME
-SELECT
-  'Engineering student (ESPRIT + Marburg)' AS profile,
-  'Data Platform | Data Eng | DevOps'      AS seeking,
-  'Leipzig, Germany — from Dec 2026'       AS location,
-  'Reproducible infra over manual steps'   AS mantra;
-```
-
-I eliminate manual, error-prone steps where infrastructure, CI/CD and data intersect: reproducible infrastructure with Terraform + Ansible, quality-gated delivery with Jenkins + SonarQube, and governed data pipelines with Databricks + Spark and Airflow / Prefect. Proof below — systems that reconcile, fail fast, and recover fast.
-
----
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=adriansalvadorekomo&show_icons=true&theme=default&hide_border=true&bg_color=f8f9fa&title_color=1a73e8&icon_color=1a73e8" height="155" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=adriansalvadorekomo&hide_border=true&background=f8f9fa&stroke=1a73e8&ring=1a73e8&fire=ea4335&currStreakLabel=1a73e8" height="155" />
-</p>
-
----
-
-### Selected projects
-
-<sub>Ordered by relevance to Data Engineering, Data Platform and DevOps. Each one: the problem, what I did, what changed.</sub>
+Ordered by relevance to Data Engineering, Data Platform and DevOps. Each one: the problem, what I did, what changed.
 
 **1. Reconciled $99.4M in revenue through a governed medallion lakehouse**  
 <sub>[DataOps Lakehouse](https://github.com/adriansalvadorekomo/DataOps-Lakehouse-for-E-commerce-Analytics)</sub>
@@ -101,108 +65,41 @@ I eliminate manual, error-prone steps where infrastructure, CI/CD and data inter
 - **Result:** Forecast error under 15% (MAPE).
 - <sub>Built with Airflow · MLflow · n8n · Docker · Nginx · Prometheus · Grafana</sub>
 
-Public Spark, Spark SQL and Spark Streaming notebooks are in the DataOps repository and my gists.
+## Notes
 
----
-
-### Tools behind the projects
-
-<table>
-  <tr>
-    <th align="left" width="220">Group</th>
-    <th align="left">Stack</th>
-  </tr>
-  <tr>
-    <td><b>Platform &amp; Infrastructure</b></td>
-    <td><img src="https://img.shields.io/badge/Terraform-7B42BC?style=flat&logo=terraform&logoColor=white" /> <img src="https://img.shields.io/badge/Ansible-EE0000?style=flat&logo=ansible&logoColor=white" /> <img src="https://img.shields.io/badge/OpenStack-ED1944?style=flat&logo=openstack&logoColor=white" /> <img src="https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black" /> <img src="https://img.shields.io/badge/Nginx-009639?style=flat&logo=nginx&logoColor=white" /> <img src="https://img.shields.io/badge/HTTPS-1A73E8?style=flat&logo=letsencrypt&logoColor=white" /></td>
-  </tr>
-  <tr>
-    <td><b>Delivery &amp; Automation</b></td>
-    <td><img src="https://img.shields.io/badge/Jenkins-D24939?style=flat&logo=jenkins&logoColor=white" /> <img src="https://img.shields.io/badge/SonarQube-4E9BCD?style=flat&logo=sonarqube&logoColor=white" /> <img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white" /> <img src="https://img.shields.io/badge/Quality_Gates-1A73E8?style=flat" /></td>
-  </tr>
-  <tr>
-    <td><b>Containers &amp; Orchestration</b></td>
-    <td><img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white" /> <img src="https://img.shields.io/badge/Docker_Compose-2496ED?style=flat&logo=docker&logoColor=white" /> <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat&logo=kubernetes&logoColor=white" /></td>
-  </tr>
-  <tr>
-    <td><b>Data Engineering</b></td>
-    <td><img src="https://img.shields.io/badge/Databricks-FF3621?style=flat&logo=databricks&logoColor=white" /> <img src="https://img.shields.io/badge/PySpark-E25A1C?style=flat&logo=apachespark&logoColor=white" /> <img src="https://img.shields.io/badge/Spark_SQL-E25A1C?style=flat&logo=apachespark&logoColor=white" /> <img src="https://img.shields.io/badge/Spark_Streaming-E25A1C?style=flat&logo=apachespark&logoColor=white" /> <img src="https://img.shields.io/badge/Medallion-Bronze_Silver_Gold-1A73E8?style=flat" /> <img src="https://img.shields.io/badge/DQ_Gates-34A853?style=flat" /> <img src="https://img.shields.io/badge/Star_Schema-4169E1?style=flat" /></td>
-  </tr>
-  <tr>
-    <td><b>Pipelines &amp; Observability</b></td>
-    <td><img src="https://img.shields.io/badge/Apache_Airflow-017CEE?style=flat&logo=apacheairflow&logoColor=white" /> <img src="https://img.shields.io/badge/Prefect-070CEE?style=flat&logo=prefect&logoColor=white" /> <img src="https://img.shields.io/badge/n8n-EA4C89?style=flat&logo=n8n&logoColor=white" /> <img src="https://img.shields.io/badge/MLflow-0194E2?style=flat&logo=mlflow&logoColor=white" /> <img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat&logo=prometheus&logoColor=white" /> <img src="https://img.shields.io/badge/Grafana-F46800?style=flat&logo=grafana&logoColor=white" /></td>
-  </tr>
-  <tr>
-    <td><b>Programming</b></td>
-    <td><img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" /> <img src="https://img.shields.io/badge/SQL-4169E1?style=flat&logo=postgresql&logoColor=white" /> <img src="https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnubash&logoColor=white" /> <img src="https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white" /></td>
-  </tr>
-</table>
-
-<sub>Core drivers: <b>SQL</b> · <b>Databricks</b> · <b>Terraform</b> — methods: Systems Thinking, Agile</sub>
-
-
----
-
-### Latest notes
-
-Study notes and project write-ups, with the numbers left honest, at [adriansalvadorekomodev.vercel.app/blog](https://adriansalvadorekomodev.vercel.app/blog):
+Study notes and project write-ups, with the numbers left honest ([all notes](https://adriansalvadorekomodev.vercel.app/blog)):
 
 - [A test set you open once: how six road-anomaly models were compared](https://adriansalvadorekomodev.vercel.app/blog/test-set-you-open-once)
 - [The dataset has no labels. Start with zero-shot, not a classifier.](https://adriansalvadorekomodev.vercel.app/blog/no-labels-zero-shot-first)
 - [Your RAG chapter summary skips 95% of the chapter](https://adriansalvadorekomodev.vercel.app/blog/chapter-summaries-skip-95-percent)
+- [Put the quality gate between Silver and Gold, and make it fail fast](https://adriansalvadorekomodev.vercel.app/blog/fail-fast-dq-gate-lakehouse)
 
----
+## Experience
 
-### Experience
+**DevOps Intern, RIF (Rassemblement des Ingénieurs Francophones)**, France, remote, Jul 2026 to Sep 2026. See project 2 above.
 
-**RIF – Rassemblement des Ingénieurs Francophones | DevOps Intern · France (Remote) · Jul 2026 – Sep 2026**
-- Replaced hand-built servers with code (Terraform + Ansible), shipped Open edX reproducibly, 5s bastion failover.
+## Education
 
-### Education
+- **ESPRIT School of Engineering**: Engineering, Computer Science, ERP-BI / Data Engineering (5th year), Sep 2022 to Dec 2026
+- **Philipps-Universität Marburg**: Exchange student (Freemover), Mathematics and Computer Science, Oct 2026 to present
 
-- **ESPRIT School of Engineering** — Engineering, Computer Science ERP-BI / Data Engineering (5th year) · Sep 2022 – Dec 2026
-- **Philipps-Universität Marburg** — Exchange (Freemover), Mathematics & Computer Science · Oct 2026 – present
+## Certifications and trainings
 
----
+- Get Started with Databricks for Data Engineering, Databricks Academy, Sep 2026 (training) · [PDF](certs/databricks-get-started-data-engineering.pdf)
+- Data Engineer Associate, DataCamp, 2026 · [certificate](https://www.datacamp.com/certificate/DEA0018198901240)
+- SQL Associate, DataCamp, 2026 · [certificate](https://www.datacamp.com/certificate/SQA0019633928960)
+- Python Data Associate, DataCamp, 2026 · [certificate](https://www.datacamp.com/certificate/PDA0019443332398)
+- Hedera Certified Developer Associate, The Hashgraph Association, Oct 2026 · [PDF](certs/HCDA.pdf)
+- Hedera Business Foundation, The Hashgraph Association, Oct 2026 · [PDF](certs/HBF.pdf)
 
-### Certifications & trainings
+## Languages
 
-| Certificate | Details |
-|-------------|---------|
-| [<img src="certs/DEA0018198901240.png" width="230" />](certs/DEA0018198901240.pdf) | **Data Engineer Associate — DataCamp**<br/>Issued Sept 2026 · ID `DEA0018198901240`<br/>Cleaning · ETL · SQL · normalization · cloud pipelines · quality<br/>DE101 + DE501P (practical SQL) |
-| [<img src="certs/databricks-get-started-data-engineering.png" width="230" />](certs/databricks-get-started-data-engineering.pdf) | **Get Started with Databricks for Data Engineering — Databricks Academy**<br/>Issued Sept 2026<br/>Lakehouse fundamentals |
-| [<img src="certs/SQA0019633928960.png" width="230" />](certs/SQA0019633928960.pdf) | **SQL Associate — DataCamp**<br/>Issued Sept 2026 · ID `SQA0019633928960` |
-| [<img src="certs/PDA0019443332398.png" width="230" />](certs/PDA0019443332398.pdf) | **Python Data Associate — DataCamp**<br/>Issued Sept 2026 · ID `PDA0019443332398`<br/>Pandas · cleaning · visualization<br/>PY101 + PY501P |
-| [<img src="certs/HCDA.png" width="230" />](certs/HCDA.pdf) | **Hedera Certified Developer Associate (HCDA) — The Hashgraph Association**<br/>Issued Oct 2026<br/>Building on Hedera: smart contracts, SDKs and testnet |
-| [<img src="certs/HBF.png" width="230" />](certs/HBF.pdf) | **Hedera Business Foundation (HBF) — The Hashgraph Association**<br/>Issued Oct 2026<br/>Hedera network fundamentals: hashgraph, services and use cases |
+Spanish (native) · English (C1) · French (C1) · German (A1, learning)
 
----
+## Tools
 
-### Languages
+The tools behind the projects above, for reference.
 
-<p>
-  <img src="https://img.shields.io/badge/Spanish-Native-1A73E8?style=flat" />
-  <img src="https://img.shields.io/badge/English-C1-34A853?style=flat" />
-  <img src="https://img.shields.io/badge/French-C1-34A853?style=flat" />
-  <img src="https://img.shields.io/badge/German-A1_learning-EA4335?style=flat" />
-</p>
-
----
-
-### CV
-
-<p>
-  <a href="cv/Adrian_Salvador_Ekomo_CV_EN.pdf"><img src="https://img.shields.io/badge/🇬🇧-English-1A73E8?style=for-the-badge" /></a>
-  <a href="cv/Adrian_Salvador_Ekomo_CV_ES.pdf"><img src="https://img.shields.io/badge/🇪🇸-Español-EA4335?style=for-the-badge" /></a>
-  <a href="cv/Adrian_Salvador_Ekomo_CV_FR.pdf"><img src="https://img.shields.io/badge/🇫🇷-Français-0A66C2?style=for-the-badge" /></a>
-  <img src="https://img.shields.io/badge/🇩🇪-Deutsch_soon-lightgrey?style=for-the-badge" />
-</p>
-<sub>German version coming soon.</sub>
-
----
-
-<p align="center">
-  <i>Data Platform · Data Engineering · DevOps | Databricks · Terraform · PySpark · SQL</i>
-  <br />
-  <sub>Built with ✦ for the data that drives decisions</sub>
-</p>
+- **Data:** Databricks, Delta Lake, PySpark, Spark SQL, Spark Streaming, Airflow, Prefect, MLflow, star-schema modelling
+- **Platform and delivery:** Terraform, Ansible, OpenStack, Docker, Kubernetes, Jenkins, SonarQube, GitHub Actions, Nginx, Linux, Prometheus, Grafana
+- **Languages:** Python, SQL, Bash, Java

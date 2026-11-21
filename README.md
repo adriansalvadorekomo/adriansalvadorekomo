@@ -1,208 +1,133 @@
-<p align="center">
-  <sub>REPRODUCIBLE INFRA&ensp;⇢&ensp;QUALITY-GATED CI/CD&ensp;⇢&ensp;GOVERNED DATA PIPELINES</sub>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
+  <img src="assets/header-light.svg" width="100%" alt="Adrián Salvador Ekomo — data engineering + devops. Open to a mandatory 6-month internship (Pflichtpraktikum), full-time from December 2026. Leipzig, Germany.">
+</picture>
+
+<p>
+  <a href="https://adriansalvadorekomodev.vercel.app"><img src="assets/key-portfolio.svg" width="150" alt="Portfolio"></a>
+  <a href="https://www.linkedin.com/in/adriansalvadorekomo"><img src="assets/key-linkedin.svg" width="150" alt="LinkedIn"></a>
+  <a href="https://www.credly.com/users/adrian-salvador-ekomo-mesi-obono"><img src="assets/key-credly.svg" width="150" alt="Credly badges"></a>
+  <a href="mailto:adriansalvadorekomo@outlook.com"><img src="assets/key-email.svg" width="150" alt="Email"></a>
+  <a href="https://adriansalvadorekomodev.vercel.app/cv"><img src="assets/key-cv.svg" width="150" alt="CV (EN · DE · FR · ES)"></a>
 </p>
 
-<h1 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=1A73E8&center=true&vCenter=true&width=850&lines=Adri%C3%A1n+Salvador+Ekomo+Mesi+Obono;Engineering+student+building+data+platforms;Reproducible+Infra+%C2%B7+Gated+CI%2FCD+%C2%B7+Governed+Pipelines" alt="Typing SVG" />
-</h1>
+### 00 — about
 
-<p align="center">
-  <b>I build the platforms data runs on.</b><br/>
-  <sub>Engineering student: reproducible infrastructure as code, quality-gated CI/CD and governed data pipelines.</sub><br/>
-  <sub>Seeking a <b>Data Platform / Data Engineering / DevOps internship</b> · Leipzig, Germany · Available from December 2026</sub>
-</p>
+Final-year Computer Science engineering student at ESPRIT (ERP-BI / Data Engineering), on an exchange semester at Philipps-Universität Marburg.
+I'm looking for a **mandatory 6-month internship (Pflichtpraktikum) in Germany, full-time from December 2026**, in data engineering or DevOps.
 
-<p align="center">
-  <a href="https://linkedin.com/in/adriansalvadorekomo"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-  <a href="mailto:adriansalvadorekomo@outlook.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-  <a href="https://github.com/adriansalvadorekomo"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
-  <a href="https://adriansalvadorekomodev.vercel.app"><img src="https://img.shields.io/badge/Portfolio-1A73E8?style=for-the-badge&logo=vercel&logoColor=white" /></a>
-  <a href="https://adriansalvadorekomodev.vercel.app/blog"><img src="https://img.shields.io/badge/Notes-7C5CFF?style=for-the-badge&logo=readthedocs&logoColor=white" /></a>
-</p>
+Every number below comes from the linked repository.
 
----
+### 01 — projects
 
-```sql
--- ABOUT ME
-SELECT
-  'Engineering student (ESPRIT + Marburg)' AS profile,
-  'Data Platform | Data Eng | DevOps'      AS seeking,
-  'Leipzig, Germany — from Dec 2026'       AS location,
-  'Reproducible infra over manual steps'   AS mantra;
-```
+#### [DataOps lakehouse for e-commerce analytics](https://github.com/adriansalvadorekomo/DataOps-Lakehouse-for-E-commerce-Analytics)
+<sub>personal project · built alone · aug – oct 2026</sub>
 
-I eliminate manual, error-prone steps where infrastructure, CI/CD and data intersect: reproducible infrastructure with Terraform + Ansible, quality-gated delivery with Jenkins + SonarQube, and governed data pipelines with Databricks + Spark and Airflow / Prefect. Proof below — systems that reconcile, fail fast, and recover fast.
+PostgreSQL system of record → Databricks Bronze / Silver / Gold in Spark SQL, run as a Databricks Workflows job.
 
----
+- A fail-fast quality gate (9 rules) between Silver and Gold: 1M synthetic orders pass with 0 violations, and Gold revenue reconciles to the source within ±₹1,000 (₹9.94B over 24 months).
+- Terraform for schemas, volumes and the job; 10 GitHub Actions CI jobs on every pull request; a tag-triggered CD that smoke-tests the stack and validates Gold counts and revenue. Trade-offs recorded in 8 ADRs.
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=adriansalvadorekomo&show_icons=true&theme=default&hide_border=true&bg_color=f8f9fa&title_color=1a73e8&icon_color=1a73e8" height="155" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=adriansalvadorekomo&hide_border=true&background=f8f9fa&stroke=1a73e8&ring=1a73e8&fire=ea4335&currStreakLabel=1a73e8" height="155" />
-</p>
+`databricks` `delta lake` `spark sql` `postgresql` `terraform` `github actions`
 
----
+#### [RoadAnomaly — pixel-level road obstacle detection](https://github.com/adriansalvadorekomo/RoadAnomaly)
+<sub>ESPRIT project · team of six · oct – nov 2026 · [landing page ↗](https://roadanomaly-landing.vercel.app)</sub>
 
-### Selected projects
+Find unexpected obstacles in road photos, pixel by pixel: six models, one frozen protocol, a test set opened once.
 
-<sub>Ordered by relevance to Data Engineering, Data Platform and DevOps. Each one: the problem, what I did, what changed.</sub>
+- Owned integration and deployment: one data loader on a frozen split, one artefact format per model, and one Predictor class behind the notebooks, a FastAPI service and Streamlit demos, all started with Docker Compose.
+- With a teammate, built the two autoencoders. The feature autoencoder was the only one of six models to meet all four business criteria: 16 of 22 obstacles found, with the fewest false alarms (10). Nine test photos, so no winner is declared.
 
-**1. Reconciled $99.4M in revenue through a governed medallion lakehouse**  
-<sub>[DataOps Lakehouse](https://github.com/adriansalvadorekomo/DataOps-Lakehouse-for-E-commerce-Analytics)</sub>
+`tensorflow` `keras` `fastapi` `streamlit` `docker compose`
 
-- **Problem:** Reports ran ad-hoc queries straight against the operational database, and nothing checked the quality of the data they returned.
-- **What I did:** Built a Bronze → Silver → Gold pipeline on Databricks with a fail-fast data-quality gate (nine rules) between Silver and Gold, with the infrastructure in Terraform and pull-request-gated CI.
-- **Result:** Revenue reconciles end to end — $99.4M on a synthetic dataset — and a bad batch can no longer reach the Gold marts.
-- <sub>Built with Databricks · PySpark · Delta Lake · Terraform · GitHub Actions</sub>
+#### [Episteme — grounded RAG study assistant](https://github.com/adriansalvadorekomo/Episteme)
+<sub>personal project · built alone · nov 2026</sub>
 
-**2. Restored SSH in ~5s with a code-defined bastion failover**  
-<sub>[RIF Open edX](https://github.com/adriansalvadorekomo/Stage_ete_RIF_Automatisation)</sub>
+A study assistant that answers only from its course material, and cites it.
 
-- **Problem:** A volunteer organisation of 10+ engineers ran hand-built servers: no infrastructure as code, no automated configuration, no high availability.
-- **What I did:** As the DevOps intern, defined the OpenStack infrastructure in Terraform and the server setup as idempotent Ansible roles, shipped a containerised Open edX behind Nginx with HTTPS, and designed a PRIMARY → BACKUP bastion on one Floating IP.
-- **Result:** SSH access is restored in about 5 seconds in failover tests, and every infrastructure change is reviewable in Git.
-- <sub>Built with OpenStack · Terraform · Ansible · Nginx · Docker</sub>
+- Documents land in S3-compatible storage and Apache Iceberg tables (Bronze / Silver), from which a FAISS index is rebuilt. Retrieval walks a similarity graph (Graph-RAG), and a local Qwen2.5 model is served behind FastAPI (73 tests).
+- Every answer is checked sentence by sentence against its sources: on a 10-question test, 162 of 185 statements (88%) were backed, up from 78%.
 
-**3. Killed “works on my machine” with a 10-stage quality-gated pipeline**  
-<sub>[PM App CI/CD](https://github.com/adriansalvadorekomo/DevOps-AppGestionDesProjets)</sub>
+`python` `apache iceberg` `faiss` `fastapi` `qwen2.5`
 
-- **Problem:** A Spring Boot, Angular and MySQL app failed on every handoff: “works on my machine”, no quality check, no container strategy.
-- **What I did:** Wrote a 10-stage Jenkins pipeline that fails fast — build, SonarQube analysis, a quality gate that blocks a red release, multistage Docker builds with immutable tags, verified redeploy — then ported the stack to Kubernetes on minikube.
-- **Result:** One command takes the app from commit to running containers, and a red quality gate stops the release.
-- <sub>Built with Jenkins · SonarQube · Docker · Kubernetes · Spring Boot</sub>
+#### [Customer churn MLOps pipeline](https://github.com/adriansalvadorekomo/customer-churn-mlops)
+<sub>personal project · sep – oct 2026</sub>
 
-**4. Stopped bad code from ever training a model**  
-<sub>[Customer Churn MLOps](https://github.com/adriansalvadorekomo/customer-churn-mlops)</sub>
+A bank-churn notebook turned into a tested, scheduled pipeline.
 
-- **Problem:** A one-off churn notebook: no tests, no schedule, and retraining by hand on the full dataset every time.
-- **What I did:** Separated the pipeline logic from the orchestration, blocked every run behind ruff, bandit and six pytest gates, and scheduled three staggered Prefect flows (02:00, 04:00, 06:00 UTC).
-- **Result:** Retraining and re-scoring run nightly without overlap, at 85.5% accuracy. Churner recall is 0.42 — documented openly, with class imbalance named as the next fix.
-- <sub>Built with Prefect · scikit-learn · ruff · bandit · pytest</sub>
+- Pipeline logic separated from Prefect 3 flows; ruff, bandit and pytest gate the nightly full run; every training run is logged to MLflow.
+- A FastAPI `/predict` endpoint and a dashboard, packaged as 5 Docker Compose services. 85.5% accuracy on a 2,000-customer holdout, with the weak churner recall (0.42) reported openly.
 
-**5. Made a RAG tutor summarise whole chapters, not the five closest passages**  
-<sub>[Episteme](https://github.com/adriansalvadorekomo/Episteme)</sub>
+`prefect` `scikit-learn` `mlflow` `fastapi` `pytest` `docker compose`
 
-- **Problem:** Top-k retrieval reads about 5% of a 30-page chapter, so chapter summaries skip most of it — and a small LLM fills the gaps with fluent guesses.
-- **What I did:** Built a course tutor that answers only from its own corpus: a Bronze/Silver lakehouse (object storage plus Iceberg), Graph-RAG retrieval over a kNN knowledge graph, and a study mode that reads a chapter section by section while the answer's structure and citations are laid out in code.
-- **Result:** Every answer is cited and carries a sentence-level verification badge. A 16-page chapter is summarised in about 30–45 seconds on a laptop RTX 4060, and a missing diagram is preferred over an invented one.
-- <sub>Built with Python · FAISS · Apache Iceberg · FastAPI · Qwen2.5 · uv</sub>
+#### [Quality-gated CI/CD for a Spring Boot + Angular app](https://github.com/adriansalvadorekomo/DevOps-AppGestionDesProjets)
+<sub>ESPRIT DevOps module · sep – oct 2026</sub>
 
-**6. Compared six road-anomaly models on a test set opened exactly once**  
-<sub>[RoadAnomaly](https://github.com/adriansalvadorekomo/RoadAnomaly-CRISPDM)</sub>
+The application code was provided; I built the delivery layer.
 
-- **Problem:** A driving camera's segmenter knows a closed list of classes, so a cow on the road can get called “road”. The goal: flag the pixels of anything unexpected, without knowing what it is.
-- **What I did:** In a team of six, trained six models on one shared split, chose thresholds on validation only and judged them once on nine sealed test photographs. My pair built the autoencoders: a pixel baseline and a feature-space one on frozen VGG16 features.
-- **Result:** The feature autoencoder is the only model meeting all four business criteria, with the fewest false alarms (10 of 22 flagged blobs); DeepLabV3+ finds the most obstacles (20 of 22). Nine photographs is small, so the top three are not statistically separated — and the write-up says so.
-- <sub>Built with TensorFlow · Keras · Autoencoder · VGG16 · FastAPI · Docker</sub>
+- A 10-stage Jenkins pipeline: Maven and npm builds, SonarQube analysis with a blocking quality gate, multistage Docker builds, immutable build-number tags, push, and a deploy verified with curl.
+- A Docker Compose stack in which the backend starts only after the MySQL health check passes, with credentials from the environment.
 
-**7. Unified three source systems into one star-schema warehouse (team of six)**  
-<sub>[EventZilla](https://github.com/adriansalvadorekomo/EventZilla-BI-AI-Powered-Event-Analytics-Platform)</sub>
+`jenkins` `sonarqube` `docker` `docker compose`
 
-- **What I did:** With a six-person academic team, built a star-schema warehouse over 3 source systems, Prophet demand forecasting and 11 Dockerized microservices behind nginx, orchestrated with Airflow and monitored with Prometheus + Grafana.
-- **Result:** Forecast error under 15% (MAPE).
-- <sub>Built with Airflow · MLflow · n8n · Docker · Nginx · Prometheus · Grafana</sub>
+#### [EventZilla BI — event analytics platform](https://github.com/adriansalvadorekomo/EventZilla-BI-AI-Powered-Event-Analytics-Platform)
+<sub>ESPRIT project · team of six · feb – may 2026</sub>
 
-Public Spark, Spark SQL and Spark Streaming notebooks are in the DataOps repository and my gists.
+Event, booking and marketing data unified so organisers can see which events make money.
 
----
+- Designed the PostgreSQL star schema (a revenue fact table with 14 dimensions) and built the Talend ETL jobs, orchestrated with Apache Airflow, with teammates.
+- Integrated the platform as a Docker Compose stack behind Nginx (PostgreSQL, FastAPI, Flask, Angular, n8n, Prometheus, Grafana) and wrote the Prophet forecasting job tracked in MLflow.
 
-### Tools behind the projects
+`postgresql` `talend` `airflow` `mlflow` `power bi` `grafana`
 
-<table>
-  <tr>
-    <th align="left" width="220">Group</th>
-    <th align="left">Stack</th>
-  </tr>
-  <tr>
-    <td><b>Platform &amp; Infrastructure</b></td>
-    <td><img src="https://img.shields.io/badge/Terraform-7B42BC?style=flat&logo=terraform&logoColor=white" /> <img src="https://img.shields.io/badge/Ansible-EE0000?style=flat&logo=ansible&logoColor=white" /> <img src="https://img.shields.io/badge/OpenStack-ED1944?style=flat&logo=openstack&logoColor=white" /> <img src="https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black" /> <img src="https://img.shields.io/badge/Nginx-009639?style=flat&logo=nginx&logoColor=white" /> <img src="https://img.shields.io/badge/HTTPS-1A73E8?style=flat&logo=letsencrypt&logoColor=white" /></td>
-  </tr>
-  <tr>
-    <td><b>Delivery &amp; Automation</b></td>
-    <td><img src="https://img.shields.io/badge/Jenkins-D24939?style=flat&logo=jenkins&logoColor=white" /> <img src="https://img.shields.io/badge/SonarQube-4E9BCD?style=flat&logo=sonarqube&logoColor=white" /> <img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white" /> <img src="https://img.shields.io/badge/Quality_Gates-1A73E8?style=flat" /></td>
-  </tr>
-  <tr>
-    <td><b>Containers &amp; Orchestration</b></td>
-    <td><img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white" /> <img src="https://img.shields.io/badge/Docker_Compose-2496ED?style=flat&logo=docker&logoColor=white" /> <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat&logo=kubernetes&logoColor=white" /></td>
-  </tr>
-  <tr>
-    <td><b>Data Engineering</b></td>
-    <td><img src="https://img.shields.io/badge/Databricks-FF3621?style=flat&logo=databricks&logoColor=white" /> <img src="https://img.shields.io/badge/PySpark-E25A1C?style=flat&logo=apachespark&logoColor=white" /> <img src="https://img.shields.io/badge/Spark_SQL-E25A1C?style=flat&logo=apachespark&logoColor=white" /> <img src="https://img.shields.io/badge/Spark_Streaming-E25A1C?style=flat&logo=apachespark&logoColor=white" /> <img src="https://img.shields.io/badge/Medallion-Bronze_Silver_Gold-1A73E8?style=flat" /> <img src="https://img.shields.io/badge/DQ_Gates-34A853?style=flat" /> <img src="https://img.shields.io/badge/Star_Schema-4169E1?style=flat" /></td>
-  </tr>
-  <tr>
-    <td><b>Pipelines &amp; Observability</b></td>
-    <td><img src="https://img.shields.io/badge/Apache_Airflow-017CEE?style=flat&logo=apacheairflow&logoColor=white" /> <img src="https://img.shields.io/badge/Prefect-070CEE?style=flat&logo=prefect&logoColor=white" /> <img src="https://img.shields.io/badge/n8n-EA4C89?style=flat&logo=n8n&logoColor=white" /> <img src="https://img.shields.io/badge/MLflow-0194E2?style=flat&logo=mlflow&logoColor=white" /> <img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat&logo=prometheus&logoColor=white" /> <img src="https://img.shields.io/badge/Grafana-F46800?style=flat&logo=grafana&logoColor=white" /></td>
-  </tr>
-  <tr>
-    <td><b>Programming</b></td>
-    <td><img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" /> <img src="https://img.shields.io/badge/SQL-4169E1?style=flat&logo=postgresql&logoColor=white" /> <img src="https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnubash&logoColor=white" /> <img src="https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white" /></td>
-  </tr>
-</table>
+### 02 — experience
 
-<sub>Core drivers: <b>SQL</b> · <b>Databricks</b> · <b>Terraform</b> — methods: Systems Thinking, Agile</sub>
+#### DevOps Intern · RIF (Rassemblement des Ingénieurs Francophones)
+<sub>internship · france, remote · jul – sep 2026 · [repository ↗](https://github.com/adriansalvadorekomo/Stage_ete_RIF_Automatisation)</sub>
 
+Automation & Improvement team (three interns) on the association's private OpenStack cloud.
 
----
+- Wrote the Ansible automation that publishes private VMs through the bastion host: an idempotent Nginx reverse-proxy role with per-site Let's Encrypt TLS (Certbot), DuckDNS updates, UFW firewall rules and built-in validation tasks.
+- Published five sites over HTTPS behind a single public floating IP (Open edX LMS and its app, Odoo and two web apps), so the organisation no longer needed one public IP per VM.
+- Contributed security-group changes to the Terraform-managed environment (fellow interns built the provisioning and the Keepalived bastion pair), and wrote the runbook and architecture diagrams.
 
-### Latest notes
+### 03 — stack
 
-Study notes and project write-ups, with the numbers left honest, at [adriansalvadorekomodev.vercel.app/blog](https://adriansalvadorekomodev.vercel.app/blog):
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg">
+  <img src="assets/stack-light.svg" width="100%" alt="Stack. Data: Python, SQL, Spark SQL, PySpark, pandas, PostgreSQL. Platform: Databricks, Delta Lake, Unity Catalog, Databricks Workflows, medallion architecture. Pipelines: Airflow, Prefect, Talend, data-quality gates, star schema. Infrastructure: Terraform, Ansible, OpenStack, Docker, Docker Compose, Nginx, Linux. Delivery: GitHub Actions, Jenkins, SonarQube, pytest, Git, Kubernetes (course). ML and ops: MLflow, scikit-learn, TensorFlow, FastAPI, Prometheus, Grafana.">
+</picture>
 
+### 04 — credentials
+
+| credential | issuer | type | date | verify |
+|---|---|---|---|---|
+| Databricks Fundamentals Accreditation | Databricks Academy | accreditation | nov 2026 | [credential.net ↗](https://www.credential.net/0d41fdab-06f5-4212-b562-566f1c461d27) |
+| Associate Data Engineer | DataCamp | certificate | sep 2026 | [datacamp ↗](https://www.datacamp.com/certificate/DEA0018198901240) |
+| SQL Associate | DataCamp | certificate | sep 2026 | [datacamp ↗](https://www.datacamp.com/certificate/SQA0019633928960) |
+| Python Data Associate | DataCamp | certificate | sep 2026 | [datacamp ↗](https://www.datacamp.com/certificate/PDA0019443332398) |
+| AWS Academy Graduate – Cloud Foundations | AWS Academy | training badge | nov 2026 | [credly ↗](https://www.credly.com/badges/c5a1a906-97cb-4599-8394-0b85fb5a9dc2) |
+| LFS162: Introduction to DevOps and Site Reliability Engineering | The Linux Foundation | course badge | nov 2026 | [credly ↗](https://www.credly.com/badges/72a292ae-a5e5-4d07-99d8-d6549c71984e) |
+| LFS101: Introduction to Linux | The Linux Foundation | course badge | nov 2026 | [credly ↗](https://www.credly.com/badges/472b36fc-71af-4f54-a027-336df6c53676) |
+
+### 05 — education
+
+- **ESPRIT School of Engineering**, Tunis — Engineering degree in Computer Science, ERP-BI / Data Engineering · sep 2022 – 2027 (expected). The final year includes a mandatory 6-month end-of-studies internship (Pflichtpraktikum).
+- **Philipps-Universität Marburg** — exchange semester, enrolled in Computer Science (Department of Mathematics and Computer Science) · oct 2026 – mar 2027.
+
+### 06 — languages
+
+spanish native · english C1 · french C1 · german A1 (learning)
+
+### 07 — notes
+
+Project write-ups, with the weak numbers left in, at [adriansalvadorekomodev.vercel.app/blog](https://adriansalvadorekomodev.vercel.app/blog):
+
+- [Put the quality gate between Silver and Gold, and make it fail fast](https://adriansalvadorekomodev.vercel.app/blog/fail-fast-dq-gate-lakehouse)
 - [A test set you open once: how six road-anomaly models were compared](https://adriansalvadorekomodev.vercel.app/blog/test-set-you-open-once)
-- [The dataset has no labels. Start with zero-shot, not a classifier.](https://adriansalvadorekomodev.vercel.app/blog/no-labels-zero-shot-first)
-- [Your RAG chapter summary skips 95% of the chapter](https://adriansalvadorekomodev.vercel.app/blog/chapter-summaries-skip-95-percent)
+- [A small LLM will sound sure. Show which sentences your sources don't back.](https://adriansalvadorekomodev.vercel.app/blog/show-which-sentences-the-sources-dont-back)
+- [85.5% accuracy, 0.42 recall: put the weak number in the README](https://adriansalvadorekomodev.vercel.app/blog/accuracy-recall-put-the-weak-number-in-the-readme)
 
 ---
 
-### Experience
-
-**RIF – Rassemblement des Ingénieurs Francophones | DevOps Intern · France (Remote) · Jul 2026 – Sep 2026**
-- Replaced hand-built servers with code (Terraform + Ansible), shipped Open edX reproducibly, 5s bastion failover.
-
-### Education
-
-- **ESPRIT School of Engineering** — Engineering, Computer Science ERP-BI / Data Engineering (5th year) · Sep 2022 – Dec 2026
-- **Philipps-Universität Marburg** — Exchange (Freemover), Mathematics & Computer Science · Oct 2026 – present
-
----
-
-### Certifications & trainings
-
-| Certificate | Details |
-|-------------|---------|
-| [<img src="certs/DEA0018198901240.png" width="230" />](certs/DEA0018198901240.pdf) | **Data Engineer Associate — DataCamp**<br/>Issued Sept 2026 · ID `DEA0018198901240`<br/>Cleaning · ETL · SQL · normalization · cloud pipelines · quality<br/>DE101 + DE501P (practical SQL) |
-| [<img src="certs/databricks-get-started-data-engineering.png" width="230" />](certs/databricks-get-started-data-engineering.pdf) | **Get Started with Databricks for Data Engineering — Databricks Academy**<br/>Issued Sept 2026<br/>Lakehouse fundamentals |
-| [<img src="certs/SQA0019633928960.png" width="230" />](certs/SQA0019633928960.pdf) | **SQL Associate — DataCamp**<br/>Issued Sept 2026 · ID `SQA0019633928960` |
-| [<img src="certs/PDA0019443332398.png" width="230" />](certs/PDA0019443332398.pdf) | **Python Data Associate — DataCamp**<br/>Issued Sept 2026 · ID `PDA0019443332398`<br/>Pandas · cleaning · visualization<br/>PY101 + PY501P |
-| [<img src="certs/HCDA.png" width="230" />](certs/HCDA.pdf) | **Hedera Certified Developer Associate (HCDA) — The Hashgraph Association**<br/>Issued Oct 2026<br/>Building on Hedera: smart contracts, SDKs and testnet |
-| [<img src="certs/HBF.png" width="230" />](certs/HBF.pdf) | **Hedera Business Foundation (HBF) — The Hashgraph Association**<br/>Issued Oct 2026<br/>Hedera network fundamentals: hashgraph, services and use cases |
-
----
-
-### Languages
-
-<p>
-  <img src="https://img.shields.io/badge/Spanish-Native-1A73E8?style=flat" />
-  <img src="https://img.shields.io/badge/English-C1-34A853?style=flat" />
-  <img src="https://img.shields.io/badge/French-C1-34A853?style=flat" />
-  <img src="https://img.shields.io/badge/German-A1_learning-EA4335?style=flat" />
-</p>
-
----
-
-### CV
-
-<p>
-  <a href="cv/Adrian_Salvador_Ekomo_CV_EN.pdf"><img src="https://img.shields.io/badge/🇬🇧-English-1A73E8?style=for-the-badge" /></a>
-  <a href="cv/Adrian_Salvador_Ekomo_CV_ES.pdf"><img src="https://img.shields.io/badge/🇪🇸-Español-EA4335?style=for-the-badge" /></a>
-  <a href="cv/Adrian_Salvador_Ekomo_CV_FR.pdf"><img src="https://img.shields.io/badge/🇫🇷-Français-0A66C2?style=for-the-badge" /></a>
-  <img src="https://img.shields.io/badge/🇩🇪-Deutsch_soon-lightgrey?style=for-the-badge" />
-</p>
-<sub>German version coming soon.</sub>
-
----
-
-<p align="center">
-  <i>Data Platform · Data Engineering · DevOps | Databricks · Terraform · PySpark · SQL</i>
-  <br />
-  <sub>Built with ✦ for the data that drives decisions</sub>
-</p>
+<sub>adrián salvador ekomo · data engineering + devops · leipzig, de · rev 2026.11 · images drawn by <code>tools/build_assets.py</code> from the portfolio's mark and fonts</sub>

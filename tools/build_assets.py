@@ -142,7 +142,7 @@ def header(t: dict, mono: Face, mono_md: Face, grot: Face, circles) -> str:
     # readouts: what this profile holds — evidence, not availability
     top = 266
     third = (W - M - x0) / 3
-    cells = [("01  projects", "6 documented", False, third), ("02  credentials", "7 verifiable", False, third), ("03  notes", "7 write-ups", False, third)]
+    cells = [("01  projects", "7 documented", False, third), ("02  credentials", "7 verifiable", False, third), ("03  notes", "7 write-ups", False, third)]
     cx = x0
     for label, value, led, colw in cells:
         assert mono_md.width(value, 18) + (22 if led else 0) <= colw - 24, value
@@ -158,7 +158,7 @@ def header(t: dict, mono: Face, mono_md: Face, grot: Face, circles) -> str:
     # bottom strip: the one-line promise
     b.append(f'<rect x="{M}" y="398" width="{W - 2 * M}" height="1" fill="{t["hair"]}"/>')
     b.append(mono.path("I build data pipelines that check the data before anyone reports on it, and the infrastructure that ships them.", M, 432, 15, t["ink2"], 0.1))
-    return svg(W, H, "Adrián Salvador Ekomo — data engineering + devops + mlops. 6 documented projects, 7 verifiable credentials, 7 write-ups.", b)
+    return svg(W, H, "Adrián Salvador Ekomo — data engineering + devops + mlops. 7 documented projects, 7 verifiable credentials, 7 write-ups.", b)
 
 
 # ── link keys (one image per key; theme-agnostic) ────────────────────────

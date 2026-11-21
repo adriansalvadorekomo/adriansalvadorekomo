@@ -117,7 +117,7 @@ def header(t: dict, mono: Face, mono_md: Face, grot: Face, circles) -> str:
     b.append(f'<rect x="1" y="1" width="{W - 2}" height="{H - 2}" rx="20" fill="{t["panel"]}" stroke="{t["hair"]}" stroke-width="2"/>')
 
     # top strip: instrument labels
-    b.append(mono.path("adriansalvadorekomo / readme", M, 46, 14, t["ink2"], 0.4))
+    b.append(mono.path("adriansalvadorekomo / dataops", M, 46, 14, t["ink2"], 0.4))
     b.append(mono.path("leipzig, de · rev 2026.11", W - M, 46, 14, t["ink2"], 0.4, "end"))
     b.append(f'<rect x="{M}" y="66" width="{W - 2 * M}" height="1" fill="{t["hair"]}"/>')
 
@@ -131,15 +131,18 @@ def header(t: dict, mono: Face, mono_md: Face, grot: Face, circles) -> str:
     # name and role
     x0 = 356
     b.append(grot.path("adrián salvador ekomo", x0 - 3, 172, 64, t["ink"], -0.6))
-    role_a, role_b = "data engineering ", " devops"
-    b.append(mono.path(role_a, x0, 222, 26, t["ink2"]))
-    px = x0 + mono.width(role_a, 26)
-    b.append(mono_md.path("+", px, 222, 26, ORANGE))
-    b.append(mono.path(role_b, px + mono.width("+", 26), 222, 26, t["ink2"]))
+    px = x0
+    for i, part in enumerate(["data engineering ", " devops ", " mlops"]):
+        if i:
+            b.append(mono_md.path("+", px, 222, 26, ORANGE))
+            px += mono.width("+", 26)
+        b.append(mono.path(part, px, 222, 26, t["ink2"]))
+        px += mono.width(part, 26)
 
-    # readouts: three labelled cells
+    # readouts: what this profile holds — evidence, not availability
     top = 266
-    cells = [("01  status", "open to work", True, 196), ("02  seeking", "6-month pflichtpraktikum", False, 326), ("03  from", "dec 2026 · full-time", False, W - M - x0 - 196 - 326)]
+    third = (W - M - x0) / 3
+    cells = [("01  projects", "6 documented", False, third), ("02  credentials", "7 verifiable", False, third), ("03  notes", "7 write-ups", False, third)]
     cx = x0
     for label, value, led, colw in cells:
         assert mono_md.width(value, 18) + (22 if led else 0) <= colw - 24, value
@@ -155,7 +158,7 @@ def header(t: dict, mono: Face, mono_md: Face, grot: Face, circles) -> str:
     # bottom strip: the one-line promise
     b.append(f'<rect x="{M}" y="398" width="{W - 2 * M}" height="1" fill="{t["hair"]}"/>')
     b.append(mono.path("I build data pipelines that check the data before anyone reports on it, and the infrastructure that ships them.", M, 432, 15, t["ink2"], 0.1))
-    return svg(W, H, "Adrián Salvador Ekomo — data engineering + devops. Open to a mandatory 6-month internship (Pflichtpraktikum), full-time from December 2026.", b)
+    return svg(W, H, "Adrián Salvador Ekomo — data engineering + devops + mlops. 6 documented projects, 7 verifiable credentials, 7 write-ups.", b)
 
 
 # ── link keys (one image per key; theme-agnostic) ────────────────────────
@@ -230,7 +233,7 @@ def main() -> None:
     for name, t in THEMES.items():
         (OUT / f"header-{name}.svg").write_text(header(t, mono, mono_md, grot, circles))
         (OUT / f"stack-{name}.svg").write_text(stack(t, mono, mono_md))
-    keys = [("01", "portfolio", True), ("02", "linkedin", False), ("03", "credly", False), ("04", "email", False), ("05", "cv", False)]
+    keys = [("01", "portfolio", True), ("02", "linkedin", False), ("03", "credly", False), ("04", "email", False)]
     for n, label, primary in keys:
         (OUT / f"key-{label}.svg").write_text(key(n, label, primary, mono, mono_md))
     for p in sorted(OUT.glob("*.svg")):

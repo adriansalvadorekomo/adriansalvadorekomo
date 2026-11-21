@@ -1,6 +1,6 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
-  <img src="assets/header-light.svg" width="100%" alt="Adrián Salvador Ekomo — data engineering + devops. Open to a mandatory 6-month internship (Pflichtpraktikum), full-time from December 2026. Leipzig, Germany.">
+  <img src="assets/header-light.svg" width="100%" alt="Adrián Salvador Ekomo — data engineering + devops + mlops. 6 documented projects, 7 verifiable credentials, 7 write-ups. Leipzig, Germany.">
 </picture>
 
 <p>
@@ -8,15 +8,14 @@
   <a href="https://www.linkedin.com/in/adriansalvadorekomo"><img src="assets/key-linkedin.svg" width="150" alt="LinkedIn"></a>
   <a href="https://www.credly.com/users/adrian-salvador-ekomo-mesi-obono"><img src="assets/key-credly.svg" width="150" alt="Credly badges"></a>
   <a href="mailto:adriansalvadorekomo@outlook.com"><img src="assets/key-email.svg" width="150" alt="Email"></a>
-  <a href="https://adriansalvadorekomodev.vercel.app/cv"><img src="assets/key-cv.svg" width="150" alt="CV (EN · DE · FR · ES)"></a>
 </p>
 
 ### 00 — about
 
 Final-year Computer Science engineering student at ESPRIT (ERP-BI / Data Engineering), on an exchange semester at Philipps-Universität Marburg.
-I'm looking for a **mandatory 6-month internship (Pflichtpraktikum) in Germany, full-time from December 2026**, in data engineering or DevOps.
+I build data pipelines that check the data before anyone reports on it, the infrastructure that ships them, and the MLOps around the models.
 
-Every number below comes from the linked repository.
+This profile is the evidence: every project links to its code, every number comes from that repository, and every credential links to where it can be verified.
 
 ### 01 — projects
 
@@ -98,21 +97,25 @@ Automation & Improvement team (three interns) on the association's private OpenS
   <img src="assets/stack-light.svg" width="100%" alt="Stack. Data: Python, SQL, Spark SQL, PySpark, pandas, PostgreSQL. Platform: Databricks, Delta Lake, Unity Catalog, Databricks Workflows, medallion architecture. Pipelines: Airflow, Prefect, Talend, data-quality gates, star schema. Infrastructure: Terraform, Ansible, OpenStack, Docker, Docker Compose, Nginx, Linux. Delivery: GitHub Actions, Jenkins, SonarQube, pytest, Git, Kubernetes (course). ML and ops: MLflow, scikit-learn, TensorFlow, FastAPI, Prometheus, Grafana.">
 </picture>
 
+<sub>Everything on this panel is used in the projects above, except Kubernetes, which comes from the LFS162 course (see credentials).</sub>
+
 ### 04 — credentials
 
-| credential | issuer | type | date | verify |
-|---|---|---|---|---|
-| Databricks Fundamentals Accreditation | Databricks Academy | accreditation | nov 2026 | [credential.net ↗](https://www.credential.net/0d41fdab-06f5-4212-b562-566f1c461d27) |
-| Associate Data Engineer | DataCamp | certificate | sep 2026 | [datacamp ↗](https://www.datacamp.com/certificate/DEA0018198901240) |
-| SQL Associate | DataCamp | certificate | sep 2026 | [datacamp ↗](https://www.datacamp.com/certificate/SQA0019633928960) |
-| Python Data Associate | DataCamp | certificate | sep 2026 | [datacamp ↗](https://www.datacamp.com/certificate/PDA0019443332398) |
-| AWS Academy Graduate – Cloud Foundations | AWS Academy | training badge | nov 2026 | [credly ↗](https://www.credly.com/badges/c5a1a906-97cb-4599-8394-0b85fb5a9dc2) |
-| LFS162: Introduction to DevOps and Site Reliability Engineering | The Linux Foundation | course badge | nov 2026 | [credly ↗](https://www.credly.com/badges/72a292ae-a5e5-4d07-99d8-d6549c71984e) |
-| LFS101: Introduction to Linux | The Linux Foundation | course badge | nov 2026 | [credly ↗](https://www.credly.com/badges/472b36fc-71af-4f54-a027-336df6c53676) |
+| credential | issuer | type | date | skills it backs (issuer's list) | verify |
+|---|---|---|---|---|---|
+| Databricks Fundamentals Accreditation | Databricks Academy | accreditation | nov 2026 | Databricks Data Intelligence (lakehouse) platform fundamentals | [credential.net ↗](https://www.credential.net/0d41fdab-06f5-4212-b562-566f1c461d27) |
+| Associate Data Engineer | DataCamp | certificate | sep 2026 | sql · etl · data cleaning · data quality | [datacamp ↗](https://www.datacamp.com/certificate/DEA0018198901240) |
+| SQL Associate | DataCamp | certificate | sep 2026 | sql | [datacamp ↗](https://www.datacamp.com/certificate/SQA0019633928960) |
+| Python Data Associate | DataCamp | certificate | sep 2026 | python · pandas · data cleaning · visualization | [datacamp ↗](https://www.datacamp.com/certificate/PDA0019443332398) |
+| AWS Academy Graduate – Cloud Foundations | AWS Academy | training badge | nov 2026 | aws cloud · core services · architecture · pricing · support | [credly ↗](https://www.credly.com/badges/c5a1a906-97cb-4599-8394-0b85fb5a9dc2) |
+| LFS162: Introduction to DevOps and Site Reliability Engineering | The Linux Foundation | course badge | nov 2026 | devops · sre · ci/cd · containers · iac · kubernetes | [credly ↗](https://www.credly.com/badges/72a292ae-a5e5-4d07-99d8-d6549c71984e) |
+| LFS101: Introduction to Linux | The Linux Foundation | course badge | nov 2026 | linux · bash shell · command line · scripting · system configuration | [credly ↗](https://www.credly.com/badges/472b36fc-71af-4f54-a027-336df6c53676) |
+
+<sub>All three Credly badges are on [credly.com/users/adrian-salvador-ekomo-mesi-obono](https://www.credly.com/users/adrian-salvador-ekomo-mesi-obono). Course and training badges show foundations, not production experience.</sub>
 
 ### 05 — education
 
-- **ESPRIT School of Engineering**, Tunis — Engineering degree in Computer Science, ERP-BI / Data Engineering · sep 2022 – 2027 (expected). The final year includes a mandatory 6-month end-of-studies internship (Pflichtpraktikum).
+- **ESPRIT School of Engineering**, Tunis — Engineering degree in Computer Science, ERP-BI / Data Engineering · sep 2022 – 2027 (expected).
 - **Philipps-Universität Marburg** — exchange semester, enrolled in Computer Science (Department of Mathematics and Computer Science) · oct 2026 – mar 2027.
 
 ### 06 — languages

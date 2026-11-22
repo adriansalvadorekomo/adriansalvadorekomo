@@ -1,6 +1,6 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
-  <img src="assets/header-light.svg" width="100%" alt="Adrián Salvador Ekomo — data engineering + devops + mlops. 7 documented projects, 7 verifiable credentials, 7 write-ups. Leipzig, Germany.">
+  <img src="assets/header-light.svg" width="100%" alt="Adrián Salvador Ekomo — data engineering and devops, with mlops foundations. 7 documented projects, 7 verifiable credentials, 7 write-ups. Leipzig, Germany.">
 </picture>
 
 <p>
@@ -12,7 +12,7 @@
 
 ### 00 — about
 
-Projects in data engineering, DevOps and MLOps, each written as **Situation · Task · Action · Result · Learning**.
+Projects in data engineering and DevOps, with MLOps foundations, each written as **Situation · Task · Action · Result · Learning**.
 Every project links to its code, every number comes from that repository, and every credential links to where it can be verified.
 
 ### 01 — projects

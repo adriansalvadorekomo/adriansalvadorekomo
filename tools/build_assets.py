@@ -179,7 +179,7 @@ def key(n: str, label: str, primary: bool, mono: Face, mono_md: Face) -> str:
 STACK = [
     ("01  data", ["python*", "sql*", "spark sql", "pyspark", "pandas", "postgresql"]),
     ("02  platform", ["databricks*", "delta lake", "unity catalog", "databricks workflows", "medallion"]),
-    ("03  pipelines", ["airflow", "prefect", "talend", "data-quality gates", "star schema"]),
+    ("03  pipelines", ["airflow", "prefect", "talend", "data-quality gates", "great expectations", "star schema"]),
     ("04  infra", ["terraform*", "ansible", "openstack", "docker", "compose", "nginx", "linux"]),
     ("05  delivery", ["github actions", "jenkins", "sonarqube", "pytest", "git", "kubernetes (course)"]),
     ("06  ml & ops", ["mlflow", "scikit-learn", "tensorflow", "fastapi", "prometheus", "grafana"]),

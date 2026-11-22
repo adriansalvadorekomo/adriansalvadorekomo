@@ -17,16 +17,16 @@ Every project links to its code, every number comes from that repository, and ev
 
 ### 01 — projects
 
-#### [DataOps lakehouse for e-commerce analytics](https://github.com/adriansalvadorekomo/DataOps-Lakehouse-for-E-commerce-Analytics)
-<sub>personal project · built alone · aug – oct 2026</sub>
+#### [DataOps lakehouse for e-commerce analytics · v2](https://github.com/adriansalvadorekomo/DataOps-Lakehouse-for-E-commerce-Analytics)
+<sub>personal project · built alone · aug – nov 2026</sub>
 
-- **Situation** — E-commerce reports that query the operational database directly come with no guarantee that the numbers are right.
-- **Task** — Build a lakehouse where bad data cannot reach the reporting layer, and every change is tested before it ships.
-- **Action** — PostgreSQL system of record → Databricks Bronze / Silver / Gold in Spark SQL (Delta Lake, Unity Catalog), run as a Databricks Workflows job. A fail-fast quality gate (9 rules) sits between Silver and Gold. Terraform manages the schemas, volumes and job; 10 GitHub Actions checks run on every pull request, and a CD workflow deploys the job and validates Gold.
-- **Result** — 1M orders (synthetic dataset) pass the gate with 0 violations, and Gold revenue reconciles to the source within ±₹1,000 (₹9.94B over 24 months). A FastAPI + PostgreSQL backend (32 tests) and a 30-day revenue forecast (Random Forest, 3.4% MAPE on a rolling one-day-ahead test) sit on top.
-- **Learning** — Put the quality gate before Gold and make it fail fast, and write the limits down: 8 ADRs record them (full refresh today, MERGE needed beyond 10M rows).
+- **Situation** — A marketplace team has dashboards but no answer to "what needs me today?", and no guarantee that the numbers behind the answer are right.
+- **Task** — Build a lakehouse where bad data cannot reach reporting and, in v2, a control tower that turns the live books into a ranked daily brief. Every change is tested before it ships.
+- **Action** — PostgreSQL system of record → Databricks Bronze / Silver / Gold in Spark SQL (Delta Lake, Unity Catalog), one Workflows job, with a fail-fast 9-rule gate between Silver and Gold. In v2, Great Expectations contracts with the same rule IDs check every imported CSV row (46 expectations) and the live tables (29), and imports are idempotent. A FastAPI + React control tower ranks signals (late shipments, repeat customers gone quiet, sellers flagged against peers only when significant) and answers plain-language questions as short reports that users rate. Terraform manages the Databricks assets; 10 CI jobs run on every pull request, and a version tag deploys the job and validates Gold.
+- **Result** — 1M synthetic orders pass the gate with 0 violations, and Gold revenue reconciles to the source within ±₹1,000 (₹9.94B over 24 months). The books contract meets 28 of 29 expectations; the one warning is real (≈ 281,000 orders never closed "in transit"). A 505-row import: 300 added, 200 recognised, 5 rejected with their rule, in 0.8 s. The brief takes ~8 s cold and ~150 ms warm; the 30-day forecast has 3.4% MAPE; 59 API tests.
+- **Learning** — Check the analysis as hard as the data. An earlier "30× growth" claim compared a one-day month with a full one, and joining sales to each product's latest category put Electronics at 24% of revenue instead of 66%. Both are corrected and documented, and 11 ADRs say when each choice stops being right.
 
-`databricks` `delta lake` `spark sql` `postgresql` `terraform` `github actions`
+`databricks` `delta lake` `spark sql` `great expectations` `postgresql` `fastapi` `react` `terraform` `github actions`
 
 #### [RoadAnomaly — pixel-level road obstacle detection](https://github.com/adriansalvadorekomo/RoadAnomaly)
 <sub>team project · six people · oct – nov 2026 · [results page ↗](https://roadanomaly-landing.vercel.app)</sub>

@@ -131,13 +131,18 @@ def header(t: dict, mono: Face, mono_md: Face, grot: Face, circles) -> str:
     # name and role
     x0 = 356
     b.append(grot.path("adrián salvador ekomo", x0 - 3, 172, 64, t["ink"], -0.6))
+    # focus: data engineering & devops; mlops is a secondary line (same wording as the portfolio)
     px = x0
-    for i, part in enumerate(["data engineering ", " devops ", " mlops"]):
-        if i:
-            b.append(mono_md.path("+", px, 222, 26, ORANGE))
-            px += mono.width("+", 26)
-        b.append(mono.path(part, px, 222, 26, t["ink2"]))
-        px += mono.width(part, 26)
+    b.append(mono.path("data engineering ", px, 222, 26, t["ink2"]))
+    px += mono.width("data engineering ", 26)
+    b.append(mono_md.path("&", px, 222, 26, ORANGE))
+    px += mono.width("&", 26)
+    b.append(mono.path(" devops", px, 222, 26, t["ink2"]))
+    px += mono.width(" devops", 26) + 28
+    b.append(mono_md.path("+", px, 222, 18, ORANGE))
+    px += mono.width("+", 18)
+    b.append(mono.path(" mlops foundations", px, 222, 18, t["ink2"]))
+    assert px + mono.width(" mlops foundations", 18) < W - M, "role line too long"
 
     # readouts: what this profile holds — evidence, not availability
     top = 266
@@ -158,7 +163,7 @@ def header(t: dict, mono: Face, mono_md: Face, grot: Face, circles) -> str:
     # bottom strip: the one-line promise
     b.append(f'<rect x="{M}" y="398" width="{W - 2 * M}" height="1" fill="{t["hair"]}"/>')
     b.append(mono.path("I build data pipelines that check the data before anyone reports on it, and the infrastructure that ships them.", M, 432, 15, t["ink2"], 0.1))
-    return svg(W, H, "Adrián Salvador Ekomo — data engineering + devops + mlops. 7 documented projects, 7 verifiable credentials, 7 write-ups.", b)
+    return svg(W, H, "Adrián Salvador Ekomo — data engineering and devops, with mlops foundations. 7 documented projects, 7 verifiable credentials, 7 write-ups.", b)
 
 
 # ── link keys (one image per key; theme-agnostic) ────────────────────────
@@ -179,7 +184,7 @@ def key(n: str, label: str, primary: bool, mono: Face, mono_md: Face) -> str:
 STACK = [
     ("01  data", ["python*", "sql*", "spark sql", "pyspark", "pandas", "postgresql"]),
     ("02  platform", ["databricks*", "delta lake", "unity catalog", "databricks workflows", "medallion"]),
-    ("03  pipelines", ["airflow", "prefect", "talend", "data-quality gates", "star schema"]),
+    ("03  pipelines", ["airflow", "prefect", "talend", "data-quality gates", "great expectations", "star schema"]),
     ("04  infra", ["terraform*", "ansible", "openstack", "docker", "compose", "nginx", "linux"]),
     ("05  delivery", ["github actions", "jenkins", "sonarqube", "pytest", "git", "kubernetes (course)"]),
     ("06  ml & ops", ["mlflow", "scikit-learn", "tensorflow", "fastapi", "prometheus", "grafana"]),

@@ -61,6 +61,17 @@ Every project links to its code, every number comes from that repository, and ev
 
 `prefect` `scikit-learn` `mlflow` `fastapi` `pytest` `docker compose`
 
+#### [EventZilla v2 — event analytics on a gated data platform](https://github.com/adriansalvadorekomo/EventZilla-BI-AI-Powered-Event-Analytics-Platform)
+<sub>personal rebuild · built alone · nov 2026 · v1: team project, six people, feb – may 2026</sub>
+
+- **Situation** — Our team project's warehouse was lost, and its fact table had kept 428 of 18,000 reservations without anyone noticing.
+- **Task** — Rebuild it alone, on synthetic data with the original structure, so that every figure is checked before anyone reads it.
+- **Action** — Files and two tables scraped with Firecrawl land in S3; Airbyte loads them into PostgreSQL, dbt builds one star schema with 43 tests, Great Expectations gates it and Airflow runs it daily. Managers read it in Metabase and an Angular app whose analyst runs only guarded, read-only SQL.
+- **Result** — All 18,000 reservations kept; 79 dbt nodes and 15 of 15 gate checks pass in a 60-second daily run, and four kinds of source defect are counted instead of hidden. A model that predicted no better than chance (AUC 0.50) was stopped at its gate rather than shown.
+- **Learning** — A model that fails its gate is a result too: say so instead of showing a prediction.
+
+`airbyte` `dbt` `great expectations` `airflow` `postgresql` `metabase`
+
 #### [Quality-gated CI/CD for a Spring Boot + Angular app](https://github.com/adriansalvadorekomo/DevOps-AppGestionDesProjets)
 <sub>course project · sep – oct 2026</sub>
 
@@ -71,17 +82,6 @@ Every project links to its code, every number comes from that repository, and ev
 - **Learning** — Harden against the failures you actually hit: retries on registry timeouts, explicit diagnostics when credentials fail, and a deploy that is not green until the API answers.
 
 `jenkins` `sonarqube` `docker` `docker compose`
-
-#### [EventZilla BI — event analytics platform](https://github.com/adriansalvadorekomo/EventZilla-BI-AI-Powered-Event-Analytics-Platform)
-<sub>team project · six people · feb – may 2026</sub>
-
-- **Situation** — Event, booking and marketing data sat in separate systems, so organisers could not see which events make money.
-- **Task** — Unify the data in a warehouse, with forecasting and dashboards.
-- **Action** — Designed the PostgreSQL star schema (a revenue fact table with 14 dimensions) and built the Talend ETL jobs, orchestrated with Apache Airflow, with teammates. Wrote the ML training scripts tracked in MLflow and automated retraining with n8n. Integrated the platform as a Docker Compose stack behind Nginx, built the Power BI and Grafana dashboards, and co-built an NL-to-SQL assistant (Groq LLaMA 3.3) with a teammate.
-- **Result** — Prophet had the lowest RMSE against ARIMA and Holt-Winters in all three event categories, and organisers can ask questions in plain language and get a chart.
-- **Learning** — Model the warehouse around the business questions, not around the source schemas.
-
-`postgresql` `talend` `airflow` `mlflow` `power bi` `grafana`
 
 #### [Ansible automation for a private OpenStack cloud (RIF)](https://github.com/adriansalvadorekomo/Stage_ete_RIF_Automatisation)
 <sub>devops internship · team of three · jul – sep 2026</sub>

@@ -128,9 +128,9 @@ def header(t: dict, mono: Face, mono_md: Face, grot: Face, circles) -> str:
     px += mono.width(" devops", 24) + 24
     b.append(mono_md.path("+", px, 162, 17, ORANGE))
     px += mono.width("+", 17)
-    b.append(mono.path(" mlops foundations", px, 162, 17, t["ink2"]))
-    assert px + mono.width(" mlops foundations", 17) < W - M, "role line too long"
-    return svg(W, H, "Adrián Salvador Ekomo — data engineering and devops, with mlops foundations.", b)
+    b.append(mono.path(" analytics engineering · cloud", px, 162, 17, t["ink2"]))
+    assert px + mono.width(" analytics engineering · cloud", 17) < W - M, "role line too long"
+    return svg(W, H, "Adrián Salvador Ekomo — data engineering and devops, with analytics engineering and cloud.", b)
 
 
 def main() -> None:

@@ -28,6 +28,8 @@ from fontTools.varLib import instancer
 
 DEFS: dict[str, str] = {}  # glyph id -> outline, collected per image
 OUT = Path(__file__).resolve().parent.parent / "assets"
+# Bump when an image changes: GitHub's image proxy caches by URL, so a new name forces a refetch.
+VERSION = "v3"
 
 ORANGE = "#ff4f00"
 THEMES = {
@@ -101,6 +103,38 @@ def svg(w: int, h: int, label: str, body: list[str]) -> str:
     )
 
 
+# ── link keys: the README's links as keycaps, the same language as the portfolio hero ──
+# (index, printed label, word, primary). One orange key, the primary action, as on the site.
+# GitHub is engineering evidence only (user, 2026-11-25): no CV, no availability.
+KEYS = [
+    ("portfolio", "a · site", "portfolio", True),
+    ("blog", "b · notes", "blog", False),
+    ("linkedin", "c · profile", "linkedin", False),
+    ("credly", "d · badges", "credly", False),
+    ("email", "e · mail", "email", False),
+]
+
+
+def arrow(x: float, y: float, size: float, color: str) -> str:
+    """The site's ↗: a short diagonal with an open head, drawn (not a font glyph)."""
+    s = size
+    return (f'<path d="M{num(x)} {num(y + s)} L{num(x + s)} {num(y)} M{num(x + s * 0.35)} {num(y)} H{num(x + s)} V{num(y + s * 0.65)}" '
+            f'fill="none" stroke="{color}" stroke-width="2.4" stroke-linecap="square"/>')
+
+
+def key(t: dict, mono: Face, mono_md: Face, label: str, word: str, primary: bool) -> str:
+    W, H = 264, 96
+    face = ORANGE if primary else t["key"]
+    line = ORANGE if primary else t["hair"]
+    ink = "#121212" if primary else t["ink"]
+    ink2 = "#3a1a0a" if primary else t["ink2"]
+    b = [f'<rect x="1.5" y="1.5" width="{W - 3}" height="{H - 3}" rx="12" fill="{face}" stroke="{line}" stroke-width="3"/>']
+    b.append(mono.path(label, 20, 34, 17, ink2))
+    b.append(mono_md.path(word, 20, 74, 27, ink))
+    b.append(arrow(W - 40, 54, 16, ink))
+    return svg(W, H, f"{word}", b)
+
+
 # ── header: a slim faceplate, identity only ──────────────────────────────
 def header(t: dict, mono: Face, mono_md: Face, grot: Face, circles) -> str:
     """Minimal on purpose (user, 2026-11-25): the mark, the name and the role. No counters, no claims;
@@ -147,8 +181,12 @@ def main() -> None:
     assert len(circles) == 110, len(circles)
 
     OUT.mkdir(exist_ok=True)
+    for old in OUT.glob("*.svg"):
+        old.unlink()  # only the current version is kept
     for name, t in THEMES.items():
-        (OUT / f"header-{name}.svg").write_text(header(t, mono, mono_md, grot, circles))
+        (OUT / f"header-{name}-{VERSION}.svg").write_text(header(t, mono, mono_md, grot, circles))
+        for kid, label, word, primary in KEYS:
+            (OUT / f"key-{kid}-{name}-{VERSION}.svg").write_text(key(t, mono, mono_md, label, word, primary))
     for p in sorted(OUT.glob("*.svg")):
         print(f"{p.name:22s} {p.stat().st_size / 1024:6.1f} KB")
 
